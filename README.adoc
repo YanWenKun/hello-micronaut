@@ -1,6 +1,6 @@
 = 你好，Micronaut！
 
-使用 Kotlin 与 Maven
+使用 Kotlin 与 Maven（不推荐）
 
 == 参考：
 
@@ -24,6 +24,26 @@
 
 === 使用模板创建项目
 
- mn create-app example.micronaut.complete --lang=kotlin --build=maven --verbose
+ mn create-app example.micronaut.complete --lang=kotlin --build=gradle --verbose
+
+注意 `--build=gradle` 。
 
 开整吧！
+
+=== IntelliJ IDEA 注意事项
+
+ 需要在设置中打开 Annotation Processing
+
+ 默认不会自动配置启动项，建议执行一遍 mn:run
+
+== 体会
+
+* Micronaut 的思路很诱人，但当前版本（2.0.0.M2）依然比较粗糙。
+* （在项目不大的时候）编译快、启动快、热更新快，第一感觉还是挺爽快的。
+* 目前明显重心在 Gradle，用 Maven 还是等等 2.x 的大升级。
+* 相关配套还不够“框架级”，这显然和项目年轻、人力有限有关。
+** 看官网，会在 2.x 版本时期把相关配套向 Spring 看齐。
+* 目前来看 Micronaut 有望成为像 Vert.x 一样独树一帜的方案。
+** 不太容易被其他大项目吸收，Spring 近期不太可能改道 Micronaut 的思路。
+** 也算是背靠 GraalVM，对云原生的强调是一个很好的切入点。
+** Spring 风头正盛，Micronaut 还在路上。虽不能取代，但 2.x 版本有望成气候。
