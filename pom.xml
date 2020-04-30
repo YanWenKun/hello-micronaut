@@ -21,8 +21,8 @@
   </properties>
   <repositories>
     <repository>
-      <id>jcenter.bintray.com</id>
-      <url>https://jcenter.bintray.com</url>
+      <id>jcenter</id>
+      <url>https://maven.aliyun.com/repository/jcenter</url>
     </repository>
   </repositories>
   <dependencies>
