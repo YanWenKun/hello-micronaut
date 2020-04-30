@@ -1,4 +1,4 @@
-package example.micronaut
+package `fun`.yanwk.hello.hellomicronaut
 
 import io.micronaut.runtime.Micronaut
 
@@ -7,7 +7,7 @@ object Application {
     @JvmStatic
     fun main(args: Array<String>) {
         Micronaut.build()
-                .packages("example.micronaut")
+                .packages("fun.yanwk.hello.hellomicronaut")
                 .mainClass(Application.javaClass)
                 .start()
     }

@@ -1,5 +1,5 @@
 profile: service
-defaultPackage: example.micronaut
+defaultPackage: fun.yanwk.hello.hellomicronaut
 ---
 testFramework: kotlintest
 sourceLanguage: kotlin
