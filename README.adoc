@@ -1,0 +1,29 @@
+= 你好，Micronaut！
+
+使用 Kotlin 与 Maven
+
+== 参考：
+
+* https://guides.micronaut.io/creating-your-first-micronaut-app-kotlin/guide/
+
+== 创建流程
+
+* JDK 1.8 或以上，最好直接 14
+
+=== 安装 SDKMAN!
+
+ curl -s "https://get.sdkman.io" | bash
+
+ 关了 Shell 重开
+
+=== 安装 Micronaut CLI
+
+ sdk update
+ sdk list micronaut
+ sdk install micronaut 2.0.0.M2
+
+=== 使用模板创建项目
+
+ mn create-app example.micronaut.complete --lang=kotlin --build=maven --verbose
+
+开整吧！
